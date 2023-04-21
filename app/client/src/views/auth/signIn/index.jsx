@@ -147,7 +147,7 @@ function SignIn() {
               fontSize='sm'
               ms={{ base: "0px", md: "0px" }}
               type='email'
-              placeholder='jan@weblance.pl'
+              placeholder='jan@bwscrm.pl'
               mb='24px'
               fontWeight='500'
               size='lg'

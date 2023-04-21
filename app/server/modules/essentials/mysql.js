@@ -1,11 +1,11 @@
 const res = require('express/lib/response');
-var mysql = require('mysql2');
 const config = require("../../config/config.json").DATABASE
+var mysql = require('mysql2');
 
 module.exports = class MySQL {
   host = config.HOST;
-  user = config.USER;
   password = config.PASSWORD;
+  user = config.USER;
   database = config.DATABASE;
 
 

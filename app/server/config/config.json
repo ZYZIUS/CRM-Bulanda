@@ -6,5 +6,6 @@
         "PASSWORD": "aQ1SIF1KU)-m-1dw",
         "DATABASE": "ckralaqami_crmreact"
     },
-    "login_key_secret": "Ir1nDSRxGt9EHJZbN0AhJGCAI7kBxE7q"
+    "login_key_secret": "Ir1nDSRxGt9EHJZbN0AhJGCAI7kBxE7q",
+    "bcrypt": "Ir1nDSRxGt9EHJZbN0AhJGCAI7kBxE7q"
 }
