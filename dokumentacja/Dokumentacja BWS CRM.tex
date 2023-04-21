@@ -5,6 +5,7 @@
 % \usepackage{hyperref}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{enumitem}
 
 \addtolength{\hoffset}{-1.5cm}
 \addtolength{\marginparwidth}{-1.5cm}
@@ -16,264 +17,204 @@
 
 \begin{document}
 
-\title{Dokumentacja projektu ZPI}
-\author{Gabriela Zborowska}
-\author{Kamil Wojnarowski}
+\title{Dokumentacja projektu aplikacji BWS CRM}
+\author{Gabriela Zborowska, Kamil Wojnarowski}
 \date{\today}
 
 \maketitle
 
-\begin{abstract}
-Zarys dokumentacji projektowej stanowiący podstawę do realizacji projektu zespołowego. (Z wykorzystaniem schematyzmu struktury znaczników \LaTeX  stworzonego przez R. J. Wysockiego.)
-\end{abstract}
-
 \newpage
 
 \tableofcontents
-\listoftables
 \listoffigures
 
 \newpage
 
-\section{Tytuł}
-\section{Nazwa robocza}
-\section{Cel}
-Jednoznacznie określony stan w przyszłości, nie mylić z produktem końcowym
-\section{Zakres}
-\subsection{Analiza wymagań}
- (oraz ,,deasemblacja'' procesu osiągnięcia celu)
-\subsection{Wymagania funkcjonalne i niefunkcjonalne}
-\subsection{Diagram przypadków użycia i diagram przepływu (opcjonalny)}
-\subsection{Dobór technologii}
-\section{Scenariusze}
-(tytuł, numer, aktorzy, stan wejścia (warunki + dane), przebieg scenariusza, wynik, scenariusz alternatywny, jeśli istnieje)
-\section{Estymacja czasowa }
-(poszczególnych zadań jak i określenie wymagań MVP oraz terminu końcowego oddania)
-\section{Implementacja}
-\section{Testy i ich wyniki}
-\section{Podsumowanie i bilans}
-(MVP vs rzeczywistość)
-\newpage
-\section{Przykłady użycia elementów języka \LaTeX - nie wchodzi w zakres oddawanej dokumentacji stanowi jedynie przykład}
-\begin{large}Powiększona czcionka.\end{large}
-{\large To też jest powiększona czcionka.}
+\section{Aplikacja BWS CRM}
 
-Jakiś nowy akapit.
-
-
-
-To jest dobór technologii.
-"Tekst w cudzysłowie podwójnym maszynowym" (wygląda nienaturalnie).
-,,Tekst w cudzysłowie podwójnym''. ``Angielski cudzysłów''.
-
-,,Twardą'' spację oznacza się znakiem tylda \~{} ($\sim$).
-Mamy do dyspozycji trzy rodzaje myślników - ,,krótki'', -- ,,normalny'' i --- ,,długi''.
-
-\label{nazwa_etykiety}
-
-Przygotuj stronę w \textbf{HTML}'u, która jest ogłoszeniem o seminarium.
-W lewym, górnym rogu strony umieść logo Wydziału Fizyki UW.
-Podaj nazwę seminarium (np.~Seminarium Kosmologia i Fizyka Cząstek),
-tytuł, imię i nazwisko  wygłaszającego seminarium,
-instytucję której jest pracownikiem,
-adres, numer sali, datę, godzinę.
- Dodaj także w punktach streszczenie wystąpienia\footnote{Jakaś informacja na marginesie.}.
- W zależności od stopnia ważności informacji, zróżnicuj rodzaj,
-wielkość i typ czcionki -- Sekcja \ref{nazwa_etykiety}.
-
-\section{Otoczenia}
-
-\subsection{Formatowanie}
-
-Żyjący w V wieku p.n.e.~prorok Malachiasz był autorem Księgi Malachiasza, będącej
-ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-świętym Kościoła katolickiego i Cerkwi prawosławnej. Wśród badaczy nie ma zgody co do
-tego, czy słowo Malachiasz to imię, tytuł proroka, czy też przypisana sobie przez
-anonimowego autora rola posłańca Bożego. Podobne słowo w takim kontekście pojawia
-się w Ml 2,7 i Ml 3,1. Rozbieżności mogły powstać za sprawą greckiego tłumacza, który
-w Septuagincie przełożył z hebrajskiego Brzemię słowa Pańskiego w ręce Malachi na
-(...) w ręce anioła tj. posła Jego, pozbawiając je jednocześnie cech
-imienia własnego. Na tej podstawie Orygenes i Tertulian sądzili, że prorok był aniołem.
-
-\begin{center}
-Żyjący w V wieku p.n.e. prorok Malachiasz był autorem Księgi Malachiasza, będącej
-ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-świętym Kościoła katolickiego i Cerkwi prawosławnej. Wśród badaczy nie ma zgody co do
-tego, czy słowo Malachiasz to imię, tytuł proroka, czy też przypisana sobie przez
-anonimowego autora rola posłańca Bożego. Podobne słowo w takim kontekście pojawia
-się w Ml 2,7 i Ml 3,1. Rozbieżności mogły powstać za sprawą greckiego tłumacza, który
-w Septuagincie przełożył z hebrajskiego Brzemię słowa Pańskiego w ręce Malachi na
-(...) w ręce anioła tj. posła Jego, pozbawiając je jednocześnie cech
-imienia własnego. Na tej podstawie Orygenes i Tertulian sądzili, że prorok był aniołem.
-\end{center}
-
-\begin{flushleft}
-Żyjący w V wieku p.n.e. prorok Malachiasz był autorem Księgi Malachiasza, będącej
-ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-świętym Kościoła katolickiego i Cerkwi prawosławnej. Wśród badaczy nie ma zgody co do
-tego, czy słowo Malachiasz to imię, tytuł proroka, czy też przypisana sobie przez
-anonimowego autora rola posłańca Bożego. Podobne słowo w takim kontekście pojawia
-się w Ml 2,7 i Ml 3,1. Rozbieżności mogły powstać za sprawą greckiego tłumacza, który
-w Septuagincie przełożył z hebrajskiego Brzemię słowa Pańskiego w ręce Malachi na
-(...) w ręce anioła tj. posła Jego, pozbawiając je jednocześnie cech
-imienia własnego. Na tej podstawie Orygenes i Tertulian sądzili, że prorok był aniołem.
-\end{flushleft}
-
-\begin{quote}
-Żyjący w V wieku p.n.e.~prorok Malachiasz był autorem Księgi Malachiasza, będącej
-ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-świętym Kościoła katolickiego i Cerkwi prawosławnej.
-
-Wśród badaczy nie ma zgody co do
-tego, czy słowo Malachiasz to imię, tytuł proroka, czy też przypisana sobie przez
-anonimowego autora rola posłańca Bożego. Podobne słowo w takim kontekście pojawia
-się w Ml 2,7 i Ml 3,1. Rozbieżności mogły powstać za sprawą greckiego tłumacza, który
-w Septuagincie przełożył z hebrajskiego Brzemię słowa Pańskiego w ręce Malachi na
-(...) w ręce anioła tj. posła Jego, pozbawiając je jednocześnie cech
-imienia własnego. Na tej podstawie Orygenes i Tertulian sądzili, że prorok był aniołem.
-\end{quote}
-
-\begin{quotation}
-Żyjący w V wieku p.n.e.~prorok Malachiasz był autorem Księgi Malachiasza, będącej
-ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-świętym Kościoła katolickiego i Cerkwi prawosławnej.
-
-Wśród badaczy nie ma zgody co do
-tego, czy słowo Malachiasz to imię, tytuł proroka, czy też przypisana sobie przez
-anonimowego autora rola posłańca Bożego. Podobne słowo w takim kontekście pojawia
-się w Ml 2,7 i Ml 3,1. Rozbieżności mogły powstać za sprawą greckiego tłumacza, który
-w Septuagincie przełożył z hebrajskiego Brzemię słowa Pańskiego w ręce Malachi na
-(...) w ręce anioła tj. posła Jego, pozbawiając je jednocześnie cech
-imienia własnego. Na tej podstawie Orygenes i Tertulian sądzili, że prorok był aniołem.
-\end{quotation}
-
-{\footnotesize
-\begin{verbatim}
-<html>
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="Content-language" content="pl" />
-  <link href='style.css' rel='stylesheet' type='text/css' />
-  <title>R. J. Wysocki</title>
-</head>
-\end{verbatim}
-}
-
-\subsection{Wypunktowanie i numeracja}
-
+\vspace{12pt}\textbf{CRM (Customer Relationship Management)} to system zarządzania relacjami z klientami, który jest stosowany przez wiele firm na całym świecie. Oto kilka przykładów zastosowania CRM:
 \begin{itemize}
-\item[--] Żyjący w V wieku p.n.e.~prorok Malachiasz był autorem Księgi Malachiasza, będącej
-  ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-  świętym Kościoła katolickiego i Cerkwi prawosławnej.
-\item Drugi punkt.
-  \begin{itemize}
-  \item Pierwszy podpunkt.
-  \item Drugi podpunkt.
-  \end{itemize}
-\item Trzeci punkt.
-\item Czwarty punkt.
+    \item\textbf{zarządzanie sprzedażą:} systemy CRM pozwalają na zbieranie i przechowywanie informacji na temat potencjalnych klientów, a także na śledzenie historii kontaktów i interakcji z nimi. Dzięki temu przedstawiciele handlowi mogą lepiej zarządzać procesem sprzedaży, dostosowując swoje podejście do indywidualnych potrzeb klientów.
+    \item\textbf{usprawnienie obsługi klienta:} systemy CRM pozwalają na śledzenie historii kontaktów i interakcji z klientami, dzięki czemu przedstawiciele obsługi klienta mogą szybko znaleźć potrzebne informacje i udzielić klientowi odpowiedzi na jego pytania lub rozwiązać jego problemy.
+    \item\textbf{analiza danych klientów:} systemy CRM pozwalają na zbieranie i analizowanie danych na temat klientów, co pozwala na lepsze zrozumienie ich potrzeb i preferencji. Dzięki temu firmy mogą dostosować swoje oferty do indywidualnych potrzeb klientów i lepiej sprostać ich oczekiwaniom.
+    \item\textbf{marketing:} systemy CRM pozwalają na zbieranie danych na temat klientów i ich zachowań, co pozwala na lepsze targetowanie kampanii marketingowych i dostosowanie ich do indywidualnych potrzeb i preferencji klientów.
+    \item\textbf{analiza wydajności:} systemy CRM pozwalają na monitorowanie wydajności zespołów sprzedażowych i obsługi klienta, dzięki czemu menadżerowie mogą lepiej zarządzać procesami biznesowymi i wdrożyć odpowiednie korekty.
 \end{itemize}
 
-\begin{enumerate}
-\item Żyjący w V wieku p.n.e.~prorok Malachiasz był autorem Księgi Malachiasza, będącej
-  ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. Malachiasz jest
-  świętym Kościoła katolickiego i Cerkwi prawosławnej.
-\item Drugi punkt.
-  \begin{itemize}
-  \item[--] Pierwszy podpunkt.
-  \item[--] Drugi podpunkt.
-  \end{itemize}
-\item Trzeci punkt.
-  \begin{enumerate}
-  \item Pierwszy podpunkt.
-  \item Drugi podpunkt..
-    \begin{enumerate}
-    \item Ala
-    \item ma
-    \item kota.
-    \end{enumerate}
-  \end{enumerate}
-\item Czwarty punkt.
-\end{enumerate}
+\newpage
 
-\begin{description}
-\item[nazwa 1] -- opis nazwy 1.
-\item[nazwa 2] -- opis nazwy 2.
-\item[nazwa 3] -- opis nazwy 3.  Opis może być dłuższy, niż jeden wiersz i warto
-  zobaczyć co się wtedy stanie.
-\end{description}
+\section{Założenia projektowe}
 
-\subsection{Tabele}
+\vspace{12pt}\hspace{0,6cm}Jednym z załżeń projektowych jest \textbf{analiza wymagań biznesowych}. Analiza wymagań biznesowych jest kluczowym zadaniem na początku projektu aplikacji CRM. Powinno to obejmować wdrożenie procesu zbierania wymagań od interesariuszy oraz analizę tych wymagań, aby określić, co jest potrzebne do zbudowania systemu CRM, tak aby spełniał on wszystkie potrzeby klientów.
 
-\begin{table}[htb]
-  \begin{tabular}{clr}
-  {\bf Wyśrodkowanie} & {\bf Do lewej} & {\bf Do prawej} \\
-  Treść & Treść & Treść \\
-  Kolejny wiersz & Kolejnuy wiersz & Kolejny wiersz \\
-  \end{tabular}
-\caption{Tabela}
-\label{tab:bez_ramek}
-\end{table}
+\vspace{12pt}Drugim ważnym zadaniem podczas projektowania aplikacji CRM jest \textbf{projektowanie architektury systemu}, zarówno projektowanie jak i planowanie struktury systemu, czy też baza danych, modele danych, interfejsy użytkownika, integracje z innymi systemami i wiele innych czynników. 
 
-\begin{table}[htb]
-  \begin{tabular}{c|l|r}
-  {\bf Wyśrodkowanie} & {\bf Do lewej} & {\bf Do prawej} \\
-  Treść & Treść & Treść \\
-  Kolejny wiersz & Kolejnuy wiersz & Kolejny wiersz \\
-  \end{tabular}
-\caption{Tabela z liniami pionowymi między kolumnami}
-\label{tab:pionowe}
-\end{table}
+\vspace{12pt}\textbf{Opracowywanie schematów bazy danych}: schematy bazy danych są kluczowe dla aplikacji CRM, ponieważ zawierają informacje na temat struktury bazy danych, w tym tabel, pól, kluczy obcych i indeksów.
 
-\begin{table}[htb]
-  \begin{tabular}{|c|l|r|}
-  \hline
-  {\bf Wyśrodkowanie} & {\bf Do lewej} & {\bf Do prawej} \\
-  \hline
-  \hline
-  Treść & Treść & Treść \\
-  \hline
-  Kolejny wiersz & Kolejnuy wiersz & Kolejny wiersz \\
-  \hline
-  \end{tabular}
-\caption{Tabela z liniami pionowymi między kolumnami i poziomymi między wierszami}
-\label{tab:ramki}
-\end{table}
+\vspace{12pt}\textbf{Projektowanie interfejsów użytkownika} jest istotnym zadaniem w projektowaniu aplikacji CRM. Ten krok procesu obejmuje zaprojektowanie interfejsów, użytkownikom łatwe i intuicyjne przeglądanie danych oraz wykonywanie działań.
 
-\begin{table}[htb]
-  \begin{tabular}{|c|l|p{6cm}|}
-  \hline
-  {\bf Wyśrodkowanie} & {\bf Do lewej} & {\bf Paragraf} \\
-  \hline
-  \hline
-  Treść & Treść & Treść \\
-  \hline
-  Kolejny wiersz & Kolejnuy wiersz &
-  Żyjący w V wieku p.n.e.~prorok Malachiasz był autorem Księgi Malachiasza, będącej
-  ostatnią w grupie dwunastu ksiąg proroków mniejszych Starego Testamentu. \\
-  \hline
-  \end{tabular}
-\caption{Tabela z dłuższym tekstem}
-\label{tab:paragraf}
-\end{table}
+\vspace{12pt}Kolejnym \textbf{projektowanie procesów biznesowych}: Projektowanie procesów biznesowych jest niezbędne, aby zbudować system CRM, który będzie spełniał potrzeby biznesowe firmy. Obejmuje to planowanie i projektowanie procesów, takich jak procesy sprzedaży, obsługi klienta i zarządzania kampaniami marketingowymi.
 
-Na rysunku \ref{sinus} jest przedstawiony wykres funkcji sin(x).  W tablicach
-\ref{tab:bez_ramek}, \ref{tab:pionowe}, \ref{tab:ramki}, \ref{tab:paragraf}
-mamy przykłady zastosowania środowiska \verb#tabular#.
+\vspace{12pt}Decydującym etapem projektu są \textbf{testy systemu}. Ten krok pomaga upewnić się, że aplikacja CRM działa zgodnie z wymaganiami biznesowymi. Obejmuje to testowanie różnych funkcji aplikacji i identyfikowanie oraz usuwanie błędów przed finalnym uruchomieniem systemu.
 
-Odwołanie do literatury -- pierwsza pozycja w spisie \cite{Wikipedia}, moja strona
-domowa \cite{RJW}.
+\vspace{12pt}Końcowym etapem jest \textbf{wdrażanie systemu}. Obejmuje to instalowanie i konfigurowanie systemu na serwerze produkcyjnym, szkolenie użytkowników i udzielanie wsparcia technicznego, aby zapewnić skuteczne wdrożenie systemu.
 
-\begin{figure}[htb!p]
-% \includegraphics[width=0.9\textwidth]{sinus.pdf}
-\caption{Wykres funkcji sin(x)}
-\label{sinus}
+\newpage
+
+\section{Cel}
+
+\vspace{12pt}\textbf{CRM (ang. Customer Relationship Management)} to strategia zarządzania relacjami z klientami oraz zestaw narzędzi i technologii służących do zbierania, przetwarzania i analizowania informacji o klientach.
+
+\vspace{12pt}
+Celem aplikacji CRM jest umożliwienie efektywnego zarządzania relacjami z klientami, poprawa procesów sprzedażowych oraz obsługi klienta, a także zwiększenie lojalności i zaangażowania klientów.
+
+\vspace{12pt}
+Aplikacja CRM pozwala na gromadzenie i przetwarzanie danych o klientach, umożliwiając dokładne poznanie ich potrzeb, preferencji i historii interakcji z firmą. Dzięki temu można lepiej dostosować ofertę do oczekiwań klientów, oferując im produkty i usługi odpowiadające ich potrzebom.
+
+\vspace{12pt}
+Kolejnym przeznaczeniem aplikacji CRM jest umożliwianie poprawy procesów sprzedażowych, pozwalając na śledzenie postępów w realizacji projektów, kontaktów z klientami, zarządzanie ofertami i zamówieniami. Pozwala także na poprawę obsługi klienta poprzez zapewnienie szybkiego dostępu do informacji i historii interakcji z klientem, pozwalając na szybką i skuteczną odpowiedź na jego potrzeby.
+
+\vspace{12pt}
+W efekcie aplikacja CRM przyczynia się do zwiększenia satysfakcji klientów oraz osiągnięcia lepszych wyników finansowych firmy, poprzez lepsze wykorzystanie czasu i zasobów, bardziej ukierunkowane działania marketingowe i sprzedażowe oraz lepsze relacje z klientami.
+
+\newpage
+
+\section{Diagram oraz scenariusze przypadków użycia aplikacji CRM}
+
+\subsection{Diagram przypakdów użycia aplikacji CRM}
+\begin{figure}[h]
+  \centering
+  \scalebox{0.5}{\includegraphics{diagram_przypadkow_uzycia.jpg}}
+  \caption{Diagram przypadków użycia}
 \end{figure}
 
-\begin{thebibliography}{9}
-\bibitem{Wikipedia} {\it Pauli matrices}
-  (\url{http://en.wikipedia.org/wiki/Pauli_matrices}).
-\bibitem{RJW} {\it Moja strona} (\url{http://www.fuw.edu.pl/~rwys}).
-\end{thebibliography}
+\newpage
+
+\subsection{Scenaiusz użycia aplikacji CRM}
+
+\begin{enumerate}
+
+\item Zarządzanie kontakami.
+\begin{enumerate}
+\item Użytkownik może dodać nowy kontakt do bazy danych CRM, podając jego dane osobowe, adres oraz numer telefonu i/lub adres e-mail.
+\item Użytkownik może edytować dane istniejącego już kontaktu, np. zmieniając adres e-mail lub numer telefonu.
+\item Użytkownik może wyszukać kontakt po określonych kryteriach, takich jak imię i nazwisko, numer telefonu lub adres e-mail.
+\end{enumerate}
+
+\item Zarządzanie sprzedażą.
+\begin{enumerate}
+\item Użytkownik może dodawać informacje o potencjalnych klientach, np. dane kontaktowe, preferencje zakupowe itp.
+\item Użytkownik może śledzić postępy w sprzedaży, np. ile klientów już dokonało zakupu, ile jest jeszcze potencjalnych klientów itp.
+\item Użytkownik może zarządzać zamówieniami i fakturami, np. dodając nowe zamówienie lub generując fakturę za sprzedany towar.
+\end{enumerate}
+
+\item{Zarządzanie kampaniami marketingowymi}
+\begin{enumerate}
+    \item Użytkownik może tworzyć nowe kampanie marketingowe, np. wysyłając e-maile lub sms-y do określonej grupy klientów.
+    \item Użytkownik może śledzić wyniki kampanii, np. ile klientów otworzyło e-maila, ile kliknęło w link w e-mailu itp.
+    \item Użytkownik może analizować skuteczność kampanii, np. porównując wyniki różnych kampanii i podejmując decyzje o zmianach w strategii marketingowej.
+\end{enumerate}
+
+\item{Zarządzanie zadaniami}
+\begin{enumerate}
+    \item Użytkownik może tworzyć zadania i przypisywać je do określonych osób w firmie.
+    \item Użytkownik może śledzić postępy w wykonywaniu zadań, np. sprawdzając, czy zadanie zostało już zakończone.
+    \item Użytkownik może generować raporty na temat wykonania zadań, np. porównując czas wykonania zadania przez różne osoby w firmie.
+\end{enumerate}
+
+\item{Zarządzanie serwisem posprzedażowym}
+\begin{enumerate}
+    \item Użytkownik może rejestrować zgłoszenia serwisowe od klientów, np. w przypadku reklamacji lub usterek produktów.
+    \item Użytkownik może przypisywać zgłoszenia do określonych pracowników w firmie i śledzić postępy w ich realizacji.
+    \item Użytkownik może generować raporty na temat zgłoszeń serwisowych, np. porównując czas reakcji na zgłoszenie przez różne osoby w firmie.
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
+
+\section{Zakres}
+
+\subsection{Analiza wymagań}
+
+\subsection{Wymagania funkcjonalne i niefunkcjonalne}
+
+\subsection{Dobór technologii}
+
+\newpage
+
+\section{Diagram klas użycia aplikacji CRM}
+\begin{figure}[h]
+  \centering
+  \scalebox{0.5}{\includegraphics{diagram_klas.jpg}}
+  \caption{Diagram klas aplikacji CRM}
+\end{figure}
+
+\begin{itemize}
+    \item Customer reprezentuje klientów w systemie CRM. Posiada atrybuty, takie jak id, nazwa, email, telefon i adres, oraz listę zamówień, które złożył.
+    \item Order reprezentuje pojedyncze zamówienie złożone przez klienta. Posiada atrybuty, takie jak id, data, łączna cena i status, a także listę produktów, które zostały zamówione.
+    \item Product reprezentuje produkty dostępne w sklepie. Posiada atrybuty, takie jak id, nazwa i cena.
+    \item OrderItem reprezentuje produkt, który został zamówiony wraz z informacjami dotyczącymi zamówienia, takimi jak ilość i cena.
+\end{itemize}
+
+W aplikacji CRM, klasy te mogą być wykorzystywane do zarządzania informacjami o klientach, ich zamówieniach oraz produktach dostępnych w sklepie. Przykładowe metody, które mogą być zdefiniowane dla tych klas, to dodawanie, usuwanie i edytowanie klientów, zamówień i produktów, a także wyszukiwanie ich na podstawie określonych kryteriów.
+
+\newpage
+
+\section{Diagram ERD}
+Diagram ERD (Entity-Relationship Diagram) przedstawia relacje pomiędzy encjami w bazie danych:
+
+\vspace{12pt}Wyjaśnienie:
+\begin{itemize}
+    \item Encja Customer (klient) posiada unikalne pole id oraz pola przechowujące informacje o kliencie, takie jak name, email, phone i address.
+    \item Encja Order (zamówienie) posiada unikalne pole id oraz pola przechowujące informacje o zamówieniu, takie jak date, total i status. Każde zamówienie odnosi się do jednego klienta.
+    \item Encja Product (produkt) posiada unikalne pole id oraz pola przechowujące informacje o produkcie, takie jak name i price.
+    \item Encja OrderItem (pozycja zamówienia) odnosi się do konkretnego produktu w zamówieniu i przechowuje informacje takie jak quantity i price.
+\end{itemize}
+
+\newpage
+
+\section{Diagram sekwencji}
+Diagram sekwencji przedstawia interakcje między obiektami w czasie:
+
+\vspace{12pt}Wyjaśnienie:
+\begin{itemize}
+    \item Klient przegląda dostępne produkty.
+    \item Klient dodaje produkt do koszyka.
+    \item Klient składa zamówienie.
+    \item System CRM zapisuje zamówienie i aktualizuje stan magazynowy.
+\end{itemize}
+
+\newpage
+
+\section{Diagram aktywności}
+Diagram aktywności przedstawia sekwencję działań wykonywanych w procesie biznesowym:
+
+\vspace{12pt}Wyjaśnienie:
+\begin{itemize}
+    \item Klient przegląda produkty dostępne w sklepie.
+    \item Klient wybiera produkt i dodaje go do koszyka.
+    \item Klient przechodzi do kasy i wprowadza swoje dane.
+    \item System CRM tworzy nowe zamówienie na podstawie danych klienta i koszyka.
+    \item System CRM wysyła potwierdzenie zamówienia do klienta i zaktualizuje stan magazynowy.
+\end{itemize}
+
+\newpage
+
+\section{Estymacja czasowa}
+
+\begin{itemize}
+    \item analiza wymgań: \textasciitilde{1 tydzień}
+    \item projektowanie interfejsów użytkownika: \textasciitilde{2 tygodnie}
+    \item implementacja modułu zarządzania kontaktami: \textasciitilde{4 tygodnie}
+    \item implementacja logowania: \textasciitilde{4 dni}
+    \item implementacja obsługi bazy danych: \textasciitilde{2 tygodnie}
+    \item dodanie użytkowników oraz dodanie kontrahentów: \textasciitilde{3 dni}
+    \item testowanie i poprawki: \textasciitilde{2 tygodnie}
+\end{itemize}
+
+\newpage
+
+\section{Implmentacja}
 
 \end{document}

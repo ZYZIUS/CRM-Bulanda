@@ -1,0 +1,10 @@
+{
+    "PORT": 36000,
+    "DATABASE": {
+        "HOST": "s177.cyber-folks.pl",
+        "USER": "ckralaqami_crmreact",
+        "PASSWORD": "aQ1SIF1KU)-m-1dw",
+        "DATABASE": "ckralaqami_crmreact"
+    },
+    "login_key_secret": "Ir1nDSRxGt9EHJZbN0AhJGCAI7kBxE7q"
+}
