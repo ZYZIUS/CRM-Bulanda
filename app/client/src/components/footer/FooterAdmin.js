@@ -42,10 +42,10 @@ export default function Footer() {
           <Link
             mx='3px'
             color={textColor}
-            href='https://www.weblance.pl'
+            
             target='_blank'
             fontWeight='700'>
-            Weblance.pl
+            BWSCRM - projekt
           </Link>
         </Text>
       </Text>

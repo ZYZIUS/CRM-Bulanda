@@ -39,7 +39,7 @@ function AuthIllustration(props) {
           position='absolute'
           right='0px'>
           <Flex
-            bg={`url(${illustrationBackground})`}
+            bg={`#435789`}
             justify='center'
             align='end'
             w='100%'
